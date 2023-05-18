@@ -1,0 +1,62 @@
+<div class="backdrop is-hidden">
+  <div class="modal">
+    <form class="main-form">
+      <div class="order-form-field">
+        <input
+          class="order-form-input"
+          type="text"
+          id="name"
+          required
+          placeholder=" "
+          pattern="[A-Za-z]{1,32}"
+        />
+        <label class="order-label order-label-position" for="name"
+          >Enter full name</label
+        >
+      </div>
+
+      <div class="order-form-field">
+        <input
+          class="order-form-input"
+          type="email"
+          id="email"
+          required
+          placeholder=" "
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        />
+        <label class="order-label order-label-position" for="email"
+          >Enter email</label
+        >
+      </div>
+
+      <div class="order-form-field">
+        <input
+          class="order-form-input"
+          type="tel"
+          id="card"
+          placeholder=" "
+          pattern="\d*"
+          minlength="10"
+          maxlength="10"
+        />
+        <label class="order-label order-label-position" for="card"
+          >Enter card</label
+        >
+      </div>
+
+      <div class="order-textarea-field">
+        <textarea
+          class="order-textarea"
+          name="comment"
+          id="comment"
+          placeholder=" "
+        ></textarea>
+        <label class="order-label text-label-position" for="comment"
+          >Enter comments</label
+        >
+      </div>
+
+      <button class="order-sudmit-button" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
