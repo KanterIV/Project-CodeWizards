@@ -1,5 +1,7 @@
 
-
+.backdrop{
+    display: none;
+}
 
 .backdrop {
     position: fixed;
