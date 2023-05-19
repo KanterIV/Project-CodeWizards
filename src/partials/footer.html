@@ -2,76 +2,84 @@
   <div class="container">
     <!-- Footer-right-side -->
     <div class="footer-right-side">
-      <picture>
-        <!-- Tablet + desktop screens -->
-        <source
-          media="(min-width:768px)"
-          srcset="
-            ./img/footer/image_tab_desk@1x.jpg 1x,
-            ./img/footer/image_tab_desk@2x.jpg 2x
-          "
-          type="image/jpg"
-        />
-        <!-- Mobile screen -->
-        <source
-          media="(max-width:767px)"
-          srcset="
-            ./img/footer/image_mob@1x.jpg 1x,
-            ./img/footer/image_mob@2x.jpg 2x
-          "
-          type="image/jpg"
-        />
-        <img
-          class="footer-img"
-          src="./img/footer/image_tab_desk@1x.jpg"
-          alt="Girl with bananas"
-          width="349"
-          height="179"
-          loading="lazy"
-        />
-      </picture>
+      <div>
+        <picture>
+          <!-- Tablet + desktop screens -->
+          <source
+            media="(min-width:768px)"
+            srcset="
+              ./img/footer/image_tab_desk@1x.jpg 1x,
+              ./img/footer/image_tab_desk@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width:767px)"
+            srcset="
+              ./img/footer/image_mob@1x.jpg 1x,
+              ./img/footer/image_mob@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <img
+            class="footer-img"
+            src="./img/footer/image_tab_desk@1x.jpg"
+            alt="Girl with bananas"
+            width="349"
+            height="179"
+            loading="lazy"
+          />
+        </picture>
+        <a class="footer-logo" href="./index.html">
+          <svg class="footer-logo-icon" width="16" height="16">
+            <use href="./img/icons.svg#icon-logo"></use>
+          </svg>
+          <span class="footer-logo-text">fresh harvest box</span>
+        </a>
+      </div>
       <ul class="footer-nav">
-        <li><a class="footer-link" href="">How It Works</a></li>
-        <li><a class="footer-link" href="">Fruits</a></li>
-        <li><a class="footer-link" href="">Contacts</a></li>
+        <li><a class="footer-link" href="#how-it-works">How It Works</a></li>
+        <li><a class="footer-link" href="#fruits">Fruits</a></li>
+        <li><a class="footer-link" href="#contacts">Contacts</a></li>
       </ul>
     </div>
     <!-- Footer-left-side -->
     <div class="footer-left-side">
       <ul class="footer-list-networks">
-        <li>
+        <li class="footer-networks-item">
           <a
             class="footer-networks-link"
             href="https://www.facebook.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <svg class="footer-networks-icon" width="40" ; height="40" ;>
-              <use href=""></use>
+            <svg class="footer-networks-icon" width="24" height="24">
+              <use href="./img/icons.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
-        <li>
+        <li class="footer-networks-item">
           <a
             class="footer-networks-link"
             href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <svg class="footer-networks-icon" width="40" ; height="40" ;>
-              <use href=""></use>
+            <svg class="footer-networks-icon" width="24" height="24">
+              <use href="./img/icons.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
-        <li>
+        <li class="footer-networks-item">
           <a
             class="footer-networks-link"
             href="https://www.youtube.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <svg class="footer-networks-icon" width="40" ; height="40" ;>
-              <use href=""></use>
+            <svg class="footer-networks-icon" width="24" height="24">
+              <use href="./img/icons.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
