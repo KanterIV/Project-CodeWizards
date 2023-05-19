@@ -1,3 +1,22 @@
-body {
-color: var(--black-text-color);
+.hero {
+    background-color: #ae1332;
+    /* color: var(--main-text-color);
+    font-family: var(--main-text-font); */
 }
+
+
+/**
+  |============================
+  | reset hero-styles
+  |============================
+*/
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* .link {
+    text-decoration: none;
+} */
