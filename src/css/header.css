@@ -53,6 +53,7 @@
   padding-top: 16px;
   padding-bottom: 16px;
 
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.04em;
@@ -90,6 +91,14 @@
   }
 }
 
+.burger-btn[aria-expanded='true'] {
+  display: none;
+}
+
 .burger-close-btn {
   display: none;
+}
+
+.burger-btn[aria-expanded='true'] + .burger-close-btn {
+  display: contents;
 }
