@@ -3,30 +3,71 @@
     <h2 class="contacts-title">Fresh Harvest Box has got you covered</h2>
     <ul class="contacts-list list">
       <li class="contacts-item">
-        <img
-          class="contacts-img"
-          srcset="
-            ./img/cotacts/melon_desk@1x.webp 1x,
-            ./img/cotacts/melon_desk@2x.webp 2x
-          "
-          src="./img/cotacts/melon_desk@1x.webp"
-          alt="melon"
-        />
+        <picture>
+          <!-- Desktop screen -->
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/cotacts/melon_desk@1x.webp 1x,
+              ./img/cotacts/melon_desk@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <!-- Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/cotacts/melon_tab@1x.webp 1x,
+              ./img/cotacts/melon_tab@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <!-- Phone screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/cotacts/melon_mob@1x.webp 1x,
+              ./img/cotacts/melon_mob@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="contacts-img-melon"
+            src="./img/cotacts/melon_mob@1x.webp"
+            alt="melon"
+            loading="lazy"
+          />
+        </picture>
       </li>
-      <li class="contacts-item">
-        <img
-          class="contacts-img"
-          srcset="
-            ./img/cotacts/blueberry_desk@1x.webp 1x,
-            ./img/cotacts/blueberry_desk@2x.webp 2x
-          "
-          src="./img/cotacts/blueberry_desk@1x.webp"
-          alt="blueberry"
-        />
+      <li class="contacts-item contacts-item-tablet">
+        <picture>
+          <!-- Desktop screen -->
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/cotacts/blueberry_desk@1x.webp 1x,
+              ./img/cotacts/blueberry_desk@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <!-- Tablet screen -->
+          <source
+            media="(max-width: 1279px)"
+            srcset="
+              ./img/cotacts/blueberry_tab@1x.webp 1x,
+              ./img/cotacts/blueberry_tab@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="contacts-img-melon"
+            src="./img/cotacts/blueberry_tab@1x.webp"
+            alt="blueberry"
+            loading="lazy"
+          />
+        </picture>
       </li>
     </ul>
-  </div>
-  <div class="contacts-support">
     <p class="contacts-support-text">
       Our boxes are packed with delicious, nutritious fruits and vegetables,
       perfect for anyone looking to eat healthier or support local farmers.
@@ -35,11 +76,11 @@
     <form class="contacts-form">
       <label class="contacts-form-field">
         <input
-          type="text"
-          name="user_email"
           class="contacts-form-input"
-          required
+          type="email"
+          name="user_email"
           placeholder="Enter email..."
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
         />
       </label>
       <button type="submit" class="contacts-form-btn">Send</button>
