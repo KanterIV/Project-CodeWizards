@@ -103,6 +103,10 @@
 .footer-networks-link:focus {
   background-color: rgba(174, 19, 50, 0.1);
 }
+.footer-networks-link:hover > .footer-networks-icon,
+.footer-networks-link:focus > .footer-networks-icon {
+  animation: shake-icon 400ms;
+}
 .footer-address-list {
   display: flex;
   flex-direction: column;
@@ -133,4 +137,23 @@
 }
 .footer-address-link {
   color: inherit;
+}
+/**
+  |============================
+  | Animation
+  |============================
+*/
+@keyframes shake-icon {
+  10% {
+    transform: rotate(20deg);
+  }
+  20% {
+    transform: rotate(-20deg);
+  }
+  30% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(-20deg);
+  }
 }
