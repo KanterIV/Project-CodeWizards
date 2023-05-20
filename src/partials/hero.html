@@ -9,11 +9,59 @@
         <img class="hero-img-two" src="../images/hero/min-bananas_mob@1x.png" alt="" width="66" height="44"> -->
 
 
+        <!-- Example -->
+        <picture>
+            <!-- Tablet + desktop screens -->
+            <source media="(min-width:768px)" srcset="
+                      ./img/footer/image_tab_desk@1x.webp 1x,
+                      ./img/footer/image_tab_desk@2x.webp 2x
+                    " type="image/jpg" />
+            <source media="(min-width:768px)" srcset="
+                      ./img/footer/image_tab_desk@1x.jpg 1x,
+                      ./img/footer/image_tab_desk@2x.jpg 2x
+                    " type="image/jpg" />
+            <!-- Mobile screen -->
+            <source media="(max-width:767px)" srcset="
+                      ./img/footer/image_mob@1x.webp 1x,
+                      ./img/footer/image_mob@2x.webp 2x
+                    " type="image/jpg" />
+            <source media="(max-width:767px)" srcset="
+                      ./img/footer/image_mob@1x.jpg 1x,
+                      ./img/footer/image_mob@2x.jpg 2x
+                    " type="image/jpg" />
+            <img class="footer-img" src="./img/footer/image_tab_desk@1x.jpg" alt="Girl with bananas" width="349"
+                height="179" loading="lazy" />
+        </picture>
+        <!-- End Example -->
+
+
         <div class="hero-container-img">
             <img class="hero-img-one" src="../images/hero/min-strawberry_mob@1x.png" alt="" width="56" height="56">
             <img class="hero-img-two" src="../images/hero/min-bananas_mob@1x.png" alt="" width="66" height="44">
 
-            <img class="hero-img-main" src="../images/hero/girl-hero_mob@1x.jpg" alt="" width="311" height="484">
+            <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)"
+                    srcset="./images/gallery/img-1_lg.webp 1x, ./images/gallery/img-1_lg@2x.webp 2x"
+                    type="image/webp" />
+                <source media="(min-width: 1200px)"
+                    srcset="./images/gallery/img-1_lg.jpg 1x, ./images/gallery/img-1_lg@2x.jpg 2x" type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                    srcset="./images/gallery/img-1_md.webp 1x, ./images/gallery/img-1_md@2x.webp 2x"
+                    type="image/webp" />
+                <source media="(min-width: 768px)"
+                    srcset="./images/gallery/img-1_md.jpg 1x, ./images/gallery/img-1_md@2x.jpg 2x" type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                    srcset="./images/gallery/img-1_sm.webp 1x, ./images/gallery/img-1_sm@2x.webp 2x"
+                    type="image/webp" />
+                <source media="(max-width: 767px)"
+                    srcset="./images/gallery/img-1_sm.jpg 1x, ./images/gallery/img-1_sm@2x.jpg 2x" type="image/jpg" />
+
+                <img class="hero-img-main" src="../images/hero/girl-hero_mob@1x.jpg"
+                    alt="young energetic red haired woman white t-shirt holding tasty orange" width="311" height="484">
+            </picture>
 
         </div>
         <button class="hero-btn" type="button">shop now</button>
