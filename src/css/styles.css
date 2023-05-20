@@ -15,3 +15,33 @@
 @import url('./thank-you-modal.css');
 @import url('./mobile-menu.css');
 @import url('./footer.css');
+
+@font-face {
+  font-family: 'DM Sans';
+  src: local('DMSans-Regular'), local('DMSans Regular'),
+    url(../fonts/DMSans-Regular.ttf), url(../fonts/DMSans-Regular.woff),
+    url(../fonts/DMSans-Regular.woff2), url(../fonts/DMSans-Regular.svg);
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: local('DMSans-Medium'), local('DMSans Medium'),
+    url(../fonts/DMSans-Medium.ttf), url(../fonts/DMSans-Medium.woff),
+    url(../fonts/DMSans-Medium.woff2), url(../fonts/DMSans-Medium.svg);
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: local('DMSans-Bold'), local('DMSans Bold'), url(../fonts/DMSans-Bold.ttf),
+    url(../fonts/DMSans-Bold.woff), url(../fonts/DMSans-Bold.woff2),
+    url(../fonts/DMSans-Bold.svg);
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}

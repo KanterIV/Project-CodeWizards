@@ -4,9 +4,16 @@
   --bg-color: #ae1332;
   --black-text-color: #000000;
   --green-color: #a4cb66;
+  --second-green: #9dc262;
+  --third-green: #a1c864;
+
   --yellow-color: #f5ce13;
   /* ==Fonts== */
   --main-text-font: 'DM Sans', sans-serif;
+}
+
+main {
+  background-color: #ae1332;
 }
 
 body {
