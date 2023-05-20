@@ -1,0 +1,221 @@
+.fruits-section {
+}
+.fruits-container {
+  margin-bottom: 80px;
+}
+@media only screen and (min-width: 768px) {
+  .fruits-container {
+    margin-bottom: 144px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .fruits-container {
+    margin-bottom: 150px;
+  }
+}
+.container {
+}
+.fruits-section-title {
+  max-width: 210px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 14px;
+
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+@media only screen and (min-width: 768px) {
+  .fruits-section-title {
+    min-width: 624px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.1;
+  }
+}
+.fruits-section-txt {
+  max-width: 334px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 44px;
+
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+@media only screen and (min-width: 768px) {
+  .fruits-section-txt {
+    width: 547px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+.fruits-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+@media only screen and (min-width: 768px) {
+  .fruits-list {
+    gap: 16px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .fruits-list {
+    gap: 24px;
+  }
+}
+.fruits-item {
+  position: relative;
+  height: 465px;
+  padding: 64px 20px 24px 24px;
+
+  border-radius: 20px;
+
+  flex-basis: calc((100% - 0) / 1);
+}
+.fruits-item:nth-child(1) {
+  background: #f8766b;
+}
+.fruits-item:nth-child(2) {
+  background: #edd251;
+}
+.fruits-item:nth-child(3) {
+  background: #9dc262;
+}
+.fruits-item:nth-child(4) {
+  background: #bfd663;
+}
+.fruits-item:nth-child(5) {
+  background: #e93f29;
+}
+.fruits-item:nth-child(6) {
+  background: #db4f4b;
+}
+.fruits-item:nth-child(7) {
+  background: #9b5366;
+}
+.fruits-item:nth-child(8) {
+  background: #f47f4c;
+}
+.fruits-item:nth-child(9) {
+  background: #98b37e;
+}
+@media only screen and (min-width: 768px) {
+  .fruits-item {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .fruits-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .fruits-item:nth-child(n + 7) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1279px) {
+  .fruits-item:nth-child(n + 9) {
+    display: none;
+  }
+}
+.fruits-title {
+  margin-bottom: 8px;
+
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: -0.04em;
+}
+@media only screen and (min-width: 768px) {
+  .fruits-title {
+    font-size: 32px;
+    line-height: 1.18;
+  }
+}
+.fruits-txt {
+  margin-bottom: 4px;
+
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+}
+@media only screen and (min-width: 768px) {
+  .fruits-txt {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+.fruits-img {
+  margin-bottom: 6px;
+}
+.fruits-price-container {
+  position: absolute;
+  width: 126px;
+  height: 42px;
+  left: 24px;
+  top: 399px;
+
+  display: flex;
+  padding: 12px 24px;
+
+  background: var(--main-text-color);
+  border-radius: 200px;
+}
+@media only screen and (min-width: 768px) {
+  .fruits-price-container {
+    left: 24px;
+    top: 393px;
+    width: 136px;
+    height: 48px;
+
+    padding: 12px 17.5px;
+  }
+}
+.fruits-price-txt {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+
+  color: #ae1332;
+}
+@media only screen and (min-width: 768px) {
+  .fruits-price-txt {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+.fruits-btn {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 44px;
+
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background: #9dc262;
+  border-radius: 100%;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  transform: rotate(-14deg);
+}
