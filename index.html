@@ -17,7 +17,7 @@
     /> -->
     
     <script type="module" crossorigin src="/Project-CodeWizards/assets/index-b932e48b.js"></script>
-    <link rel="stylesheet" href="/Project-CodeWizards/assets/index-5580dde9.css">
+    <link rel="stylesheet" href="/Project-CodeWizards/assets/index-c34e72d9.css">
   </head>
   <body>
     <header class="page-header">
@@ -424,24 +424,56 @@
     <h2 class="contacts-title">Fresh Harvest Box has got you covered</h2>
     <ul class="contacts-list list">
       <li class="contacts-item">
-        <img
-          class="contacts-img"
-          srcset="/Project-CodeWizards/assets/melon_desk@1x-579d6caa.webp 1x, /Project-CodeWizards/assets/melon_desk@2x-e5c2149e.webp 2x"
-          src="/Project-CodeWizards/assets/melon_desk@1x-579d6caa.webp"
-          alt="melon"
-        />
+        <picture>
+          <!-- Desktop screen -->
+          <source
+            media="(min-width: 1280px)"
+            srcset="/Project-CodeWizards/assets/melon_desk@1x-579d6caa.webp 1x, /Project-CodeWizards/assets/melon_desk@2x-e5c2149e.webp 2x"
+            type="image/webp"
+          />
+          <!-- Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="/Project-CodeWizards/assets/melon_tab@1x-33e44893.webp 1x, /Project-CodeWizards/assets/melon_tab@2x-c83b6ec2.webp 2x"
+            type="image/webp"
+          />
+          <!-- Phone screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="/Project-CodeWizards/assets/melon_mob@1x-a5ea2d0c.webp 1x, /Project-CodeWizards/assets/melon_mob@2x-7ba5e7b0.webp 2x"
+            type="image/webp"
+          />
+          <img
+            class="contacts-img-melon"
+            src="/Project-CodeWizards/assets/melon_mob@1x-a5ea2d0c.webp"
+            alt="melon"
+            loading="lazy"
+          />
+        </picture>
       </li>
-      <li class="contacts-item">
-        <img
-          class="contacts-img"
-          srcset="/Project-CodeWizards/assets/blueberry_desk@1x-88251769.webp 1x, /Project-CodeWizards/assets/blueberry_desk@2x-7c9ea12d.webp 2x"
-          src="/Project-CodeWizards/assets/blueberry_desk@1x-88251769.webp"
-          alt="blueberry"
-        />
+      <li class="contacts-item contacts-item-tablet">
+        <picture>
+          <!-- Desktop screen -->
+          <source
+            media="(min-width: 1280px)"
+            srcset="/Project-CodeWizards/assets/blueberry_desk@1x-88251769.webp 1x, /Project-CodeWizards/assets/blueberry_desk@2x-7c9ea12d.webp 2x"
+            type="image/webp"
+          />
+          <!-- Tablet screen -->
+          <source
+            media="(max-width: 1279px)"
+            srcset="/Project-CodeWizards/assets/blueberry_tab@1x-627c2335.webp 1x, /Project-CodeWizards/assets/blueberry_tab@2x-f9333fc7.webp 2x"
+            type="image/webp"
+          />
+          <img
+            class="contacts-img-melon"
+            src="/Project-CodeWizards/assets/blueberry_tab@1x-627c2335.webp"
+            alt="blueberry"
+            loading="lazy"
+          />
+        </picture>
       </li>
     </ul>
-  </div>
-  <div class="contacts-support">
     <p class="contacts-support-text">
       Our boxes are packed with delicious, nutritious fruits and vegetables,
       perfect for anyone looking to eat healthier or support local farmers.
@@ -450,11 +482,11 @@
     <form class="contacts-form">
       <label class="contacts-form-field">
         <input
-          type="text"
-          name="user_email"
           class="contacts-form-input"
-          required
+          type="email"
+          name="user_email"
           placeholder="Enter email..."
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
         />
       </label>
       <button type="submit" class="contacts-form-btn">Send</button>
