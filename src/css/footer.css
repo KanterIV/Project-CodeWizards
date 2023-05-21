@@ -2,22 +2,26 @@
   padding: 80px 0;
   color: var(--bg-color);
 }
+
 @media only screen and (min-width: 768px) {
   .footer .container {
     display: flex;
     align-items: center;
   }
 }
+
 @media only screen and (min-width: 1280px) {
   .footer .container {
     align-items: flex-start;
   }
 }
+
 @media only screen and (max-width: 1279px) {
   .footer .container {
     gap: 171px;
   }
 }
+
 @media only screen and (min-width: 1280px) {
   .footer-right-side {
     display: flex;
@@ -25,9 +29,11 @@
     margin-right: auto;
   }
 }
+
 .footer-img {
   margin-bottom: 20px;
 }
+
 .footer-logo {
   display: flex;
   gap: 8px;
@@ -35,14 +41,17 @@
   align-items: center;
   margin-bottom: 24px;
 }
+
 @media only screen and (min-width: 1280px) {
   .footer-logo {
     margin-bottom: 0;
   }
 }
+
 .footer-logo-icon {
   fill: currentColor;
 }
+
 .footer-logo-text {
   font-weight: 700;
   font-size: 14px;
@@ -64,6 +73,7 @@
   letter-spacing: -0.04em;
   color: inherit;
 }
+
 @media only screen and (min-width: 768px) {
   .footer-nav {
     align-items: center;
@@ -77,15 +87,18 @@
   justify-content: center;
   margin-bottom: 44px;
 }
+
 @media only screen and (min-width: 768px) {
   .footer-list-networks {
     justify-content: flex-start;
   }
 }
+
 .footer-networks-item {
   width: 40px;
   height: 40px;
 }
+
 .footer-networks-link {
   display: flex;
   justify-content: center;
@@ -99,14 +112,17 @@
 
   transition: background-color 250ms ease-in;
 }
+
 .footer-networks-link:hover,
 .footer-networks-link:focus {
   background-color: rgba(174, 19, 50, 0.1);
 }
-.footer-networks-link:hover > .footer-networks-icon,
-.footer-networks-link:focus > .footer-networks-icon {
+
+.footer-networks-link:hover>.footer-networks-icon,
+.footer-networks-link:focus>.footer-networks-icon {
   animation: shake-icon 400ms;
 }
+
 .footer-address-list {
   display: flex;
   flex-direction: column;
@@ -128,6 +144,7 @@
 .footer-address-item {
   width: 140px;
 }
+
 @media only screen and (min-width: 768px) {
   .footer-address-item {
     width: 184px;
@@ -135,9 +152,11 @@
     line-height: 1.33;
   }
 }
+
 .footer-address-link {
   color: inherit;
 }
+
 /**
   |============================
   | Animation
@@ -147,12 +166,15 @@
   10% {
     transform: rotate(20deg);
   }
+
   20% {
     transform: rotate(-20deg);
   }
+
   30% {
     transform: rotate(20deg);
   }
+
   40% {
     transform: rotate(-20deg);
   }

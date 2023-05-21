@@ -102,6 +102,7 @@
 }
 
 @media only screen and (max-width: 767px) {
+
   .contacts-support-text,
   .contacts-form {
     display: none;
