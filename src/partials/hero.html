@@ -1,97 +1,143 @@
 <section class="hero container">
 
     <div class="hero-container-main">
-        <h1 class="hero-title">fresh harvest box is&nbsp;your
-            one-stop place for a delicious fruit basket</h1>
-
-
+        <h1 class="hero-title">fresh harvest box is&nbsp;your&nbsp;one-stop
+            place for a delicious fruit basket</h1>
         <div class="hero-container-img">
-            <img class="hero-img-one" src="./img/hero/min-strawberry_mob@1x.png" alt="" width="56" height="56">
-            <img class="hero-img-two" src="./img/hero/min-bananas_mob@1x.png" alt="" width="66" height="44">
-
+            <!-- Адаптувати -->
+            <img class="hero-img-one" src="./img/hero/min-strawberry_mob@1x.png" alt="" width="56" height="56"
+                loading="lazy">
+            <img class="hero-img-two" src="./img/hero/min-bananas_mob@1x.png" alt="" width="66" height="44"
+                loading="lazy">
+            <!-- Кінець Адаптувати -->
             <picture>
-                <!-- Desktop screen -->
-                <!-- <source media="(min-width: 1280px)"
-                    srcset="./images/gallery/img-1_lg.webp 1x, ./images/gallery/img-1_lg@2x.webp 2x"
-                    type="image/webp" />
-                <source media="(min-width: 1280px)"
-                    srcset="./images/gallery/img-1_lg.jpg 1x, ./images/gallery/img-1_lg@2x.jpg 2x" type="image/jpg" /> -->
-                <!-- Tablet screen -->
-                <!-- <source media="(min-width: 768px)"
-                    srcset="./images/gallery/img-1_md.webp 1x, ./images/gallery/img-1_md@2x.webp 2x"
-                    type="image/webp" />
-                <source media="(min-width: 768px)"
-                    srcset="./images/gallery/img-1_md.jpg 1x, ./images/gallery/img-1_md@2x.jpg 2x" type="image/jpg" /> -->
-                <!-- Mobile screen -->
-                <source media="(max-width: 767px)" srcset="./img/hero/girl-hero_mob@1x.webp 1x, 
-                    ./img/hero/girl-hero_mob@2x.webp 2x" type="image/webp" />
-                <source media="(max-width: 767px)" srcset="./img/hero/girl-hero_mob@1x.jpg 1x,
-                    ./img/hero/girl-hero_mob@2x.jpg 2x" type="image/jpg" />
-
-                <img class="hero-img-main" src="./img/hero/girl-hero_mob@1x.jpg"
-                    alt="young energetic red haired woman white t-shirt holding tasty orange" width="311" height="484"
-                    loading="lazy">
+                <!-- Tablet & more screen -->
+                <!-- webp -->
+                <source media="(min-width: 768px)" srcset="
+                                  ./img/hero/girl-hero-1053_tab@1x.webp 1x,
+                                  ./img/hero/girl-hero-1053_tab@2x.webp 2x
+                                " type="image/webp" />
+                <!-- jpg -->
+                <source media="(min-width: 768px)" srcset="
+              ./img/hero/girl-hero-1053_tab@1x.jpg 1x,
+              ./img/hero/girl-hero-1053_tab@2x.jpg 2x
+            " type="image/jpg" />
+                <!-- Phone screen -->
+                <!-- webp -->
+                <source media="(max-width: 767px)" srcset="
+                                  ./img/hero/girl-hero_mob@1x.webp 1x,
+                                  ./img/hero/girl-hero_mob@2x.webp 2x
+                                " type="image/webp" />
+                <!-- jpg -->
+                <source media="(max-width: 767px)" srcset="
+              ./img/hero/girl-hero_mob@1x.jpg 1x,
+              ./img/hero/girl-hero_mob@2x.jpg 2x
+            " type="image/jpg" />
+                <!--  -->
+                <img class="hero-img-main" src="./img/hero/girl-hero_mob@1x.jpg" alt="young energetic red haired woman white t-shirt 
+                holding tasty orange" loading="lazy" />
             </picture>
-
         </div>
         <button class="hero-btn" type="button">shop now</button>
-
-
     </div>
 
 
 
-    <div class="hero-container-one">
-        <div class="hero-container-text">
-            <p class="hero-text">Our expertly curated
-                fruit baskets are made with the freshest,
-                highest quality fruits
-                available. Whether you are
-                looking
-                for a healthy snack or a gift for
-                a loved one, Fresh Harvest Box has got you covered.</p>
+    <div class="hero-container-under-main">
+        <div class="hero-container-one">
+            <div class="hero-container-text">
+                <p class="hero-text">Our expertly curated
+                    fruit baskets are made with the freshest,
+                    highest quality fruits
+                    available. Whether you are
+                    looking
+                    for a healthy snack or a gift for
+                    a loved one, Fresh Harvest Box has got you covered.</p>
+            </div>
+            <div class="hero-container-fruit">
+                <h4 class="hero-title-fruit">fruit</h4>
+                <picture>
+                    <!-- Tablet & more screen -->
+                    <!-- webp -->
+                    <source media="(min-width: 768px)" srcset="
+                    ./img/hero/watermelon_mob@1x.webp 1x,
+                    ./img/hero/watermelon_mob@2x.webp 2x" type="image/webp" />
+                    <!-- jpg -->
+                    <source media="(min-width: 768px)" srcset="
+                    ./img/hero/watermelon_mob@1x.png 1x,
+                    ./img/hero/watermelon_mob@2x.png 2x" type="image/png" />
+                    <!-- Phone screen -->
+                    <!-- webp -->
+                    <source media="(max-width: 767px)" srcset="
+                    ./img/hero/watermelon_mob@1x.webp 1x,
+                    ./img/hero/watermelon_mob@2x.webp 2x" type="image/webp" />
+                    <!-- jpg -->
+                    <source media="(max-width: 767px)" srcset="
+                    ./img/hero/watermelon_mob@1x.png 1x,
+                    ./img/hero/watermelon_mob@2x.png 2x" type="image/png" />
+                    <!--  -->
+                    <img src="./img/hero/watermelon_mob@1x.png" alt="watermelon" loading="lazy">
+                </picture>
+                <p class="hero-text-fruit">Refreshing and juicy,
+                    watermelon is the perfect summer treat and a great source of
+                    hydration</p>
+            </div>
         </div>
-        <div class="hero-container-fruit">
-            <h4 class="hero-title-fruit">fruit</h4>
-            <img src="./img/hero/watermelon_mob@1x.png" alt="" width="240" height="172">
-            <p class="hero-text-fruit">Refreshing and juicy,
-                watermelon is the perfect summer treat and a great source of
-                hydration</p>
-        </div>
-    </div>
-
-    <div class="hero-container-two">
-        <div class="hero-container-list">
-            <ul class="hero-list list">
-                <li class="hero-item">
-                    <h3 class="hero-title-item">
-                        #organic
-                    </h3>
-                </li>
-                <li class="hero-item">
-                    <h3 class="hero-title-item">
-                        #products
-                    </h3>
-                </li>
-                <li class="hero-item">
-                    <h3 class="hero-title-item">
-                        #basket
-                    </h3>
-                </li>
-                <li class="hero-item">
-                    <h3 class="hero-title-item">
-                        #fruits
-                    </h3>
-                </li>
-            </ul>
-        </div>
-        <div class="hero-container-fruit hero-second">
-            <h4 class="hero-title-fruit">fruit</h4>
-            <img src="./img/hero/basket-strawberry_mob@1x.png" alt="" width="240" height="188">
-            <p class="hero-text-fruit">Sweet and juicy,
-                strawberries are packed with vitamin C and "
-                antioxidants, making them a delicious and healthy
-                snack</p>
+        <div class="hero-container-two">
+            <div class="hero-container-list">
+                <ul class="hero-list list">
+                    <li class="hero-item">
+                        <h3 class="hero-title-item">
+                            #organic
+                        </h3>
+                    </li>
+                    <li class="hero-item">
+                        <h3 class="hero-title-item">
+                            #products
+                        </h3>
+                    </li>
+                    <li class="hero-item">
+                        <h3 class="hero-title-item">
+                            #basket
+                        </h3>
+                    </li>
+                    <li class="hero-item">
+                        <h3 class="hero-title-item">
+                            #fruits
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="hero-container-fruit hero-second">
+                <h4 class="hero-title-fruit">fruit</h4>
+                <picture>
+                    <!-- Tablet & more screen -->
+                    <!-- webp -->
+                    <source media="(min-width: 768px)" srcset="
+                                    ./img/hero/basket-strawberry_mob@1x.webp 1x,
+                                    ./img/hero/basket-strawberry_mob@2x.webp 2x" type="image/webp" />
+                    <!-- jpg -->
+                    <source media="(min-width: 768px)" srcset="
+                                    ./img/hero/basket-strawberry_mob@1x.png 1x,
+                                    ./img/hero/basket-strawberry_mob@2x.png 2x" type="image/png" />
+                    <!-- Phone screen -->
+                    <!-- webp -->
+                    <source media="(max-width: 767px)" srcset="
+                                    ./img/hero/basket-strawberry_mob@1x.webp 1x,
+                                    ./img/hero/basket-strawberry_mob@2x.webp 2x" type="image/webp" />
+                    <!-- jpg -->
+                    <source media="(max-width: 767px)" srcset="
+                                    ./img/hero/basket-strawberry_mob@1x.png 1x,
+                                    ./img/hero/basket-strawberry_mob@2x.png 2x" type="image/png" />
+                    <!--  -->
+                    <img src="./img/hero/basket-strawberry_mob@1x.png" alt="basket strawberry" width="240" height="188"
+                        loading="lazy">
+                </picture>
+                <p class="hero-text-fruit">Sweet and juicy,
+                    strawberries are packed with vitamin C and "
+                    antioxidants, making them a delicious and healthy
+                    snack</p>
+            </div>
         </div>
     </div>
 

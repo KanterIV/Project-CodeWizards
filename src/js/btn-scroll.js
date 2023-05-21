@@ -22,9 +22,9 @@ function trackScroll() {
 
 function goTop() {
 
-  if (window.pageYOffset > 0) {
+  if (window.pageYOffset > 100) {
   
-    window.scrollBy(0, -25); 
-    setTimeout(goTop, 0); 
+    window.scrollBy(0, -300); 
+    setTimeout(goTop, 100); 
   }
 }

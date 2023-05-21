@@ -12,6 +12,10 @@
   --main-text-font: 'DM Sans', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   background-color: #ae1332;
 }
@@ -46,5 +50,21 @@ body {
     width: 1245px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+section {
+  padding-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    padding-bottom: 144px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section {
+    padding-bottom: 150px;
   }
 }

@@ -37,11 +37,12 @@
 }
 @media only screen and (min-width: 768px) {
   .fruits-section-txt {
-    width: 547px;
+    min-width: 547px;
     font-size: 14px;
     line-height: 1.28;
   }
 }
+/* cards of fruits */
 .fruits-list {
   display: flex;
   flex-wrap: wrap;
@@ -65,8 +66,6 @@
   padding: 64px 20px 24px 24px;
 
   border-radius: 20px;
-
-  flex-basis: calc((100% - 0) / 1);
 }
 .fruits-item:nth-child(1) {
   background: #f8766b;
@@ -97,7 +96,7 @@
 }
 @media only screen and (min-width: 768px) {
   .fruits-item {
-    flex-basis: calc((100% - 32px) / 2);
+    flex-basis: calc((100% - 16px) / 2);
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -173,7 +172,7 @@
   line-height: 1.28;
   letter-spacing: -0.04em;
 
-  color: #ae1332;
+  color: var(--bg-color);
 }
 @media only screen and (min-width: 768px) {
   .fruits-price-txt {
@@ -181,6 +180,7 @@
     line-height: 1.33;
   }
 }
+/* button order */
 .fruits-btn {
   display: block;
   width: 80px;
@@ -189,16 +189,43 @@
   margin-right: auto;
   margin-top: 44px;
 
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.28;
   text-align: center;
   letter-spacing: -0.04em;
   text-transform: uppercase;
 
-  color: #ffffff;
-  background: #9dc262;
-  border-radius: 100%;
+  color: var(--main-text-color);
+  background: var(--second-green);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   transform: rotate(-14deg);
 }
+@media only screen and (min-width: 768px) {
+  .fruits-btn {
+    width: 114px;
+    height: 114px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+.fruits-btn-icon {
+  margin-right: 4px;
+
+  fill: currentColor;
+
+  transform: rotate(14deg);
+}
+.fruits-btn:hover,
+.fruits-btn:focus {
+  background-color: var(--main-text-color);
+  color: var(--second-green);
+}
+.fruits-btn:hover > .fruits-btn-icon,
+.fruits-btn:focus > .fruits-btn-icon {
+  fill: var(--second-green);
+}
+/* animation of button order */
