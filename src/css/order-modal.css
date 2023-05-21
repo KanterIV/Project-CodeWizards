@@ -1,9 +1,9 @@
 
-.backdrop{
+/* .backdrop{
     display: none;
-}
+} */
 
-.backdrop {
+.overlay{
     position: fixed;
     top: 0;
     left: 0;
@@ -13,9 +13,12 @@
 
     background-color: rgba(46, 47, 66, 0.4);
 
-    opacity: 1;
+    /* opacity: 1;
     visibility: visible;
-    pointer-events: initial;
+    pointer-events: initial; */
+
+    opacity: 0;
+    visibility: hidden;
     overflow: scroll;
 
     /* transition: opacity var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1), 
@@ -23,11 +26,13 @@
 
 }
 
+
 @madia screen and (orientation:lanscape) {
-    .backdrop {
+    .overlay {
         owerflow: auto;
     }
 }
+
 
 
 /* .backdrop.is-hidden {
@@ -35,12 +40,16 @@
     visibility: hidden;
     pointer-events: none;
 } */
-
-/* .backdrop.is-hidden .modal {
+/* 
+.overlay.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0) rotate(0);
-    opacity: 0; */
+    opacity: 0;} */
 
-    .modal {
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -49,10 +58,9 @@
         opacity var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);    */
     width: calc(100% - 40px);
     padding: 20px;
-    height: 903px;
     max-height: 90vh;
+    height: 903px;
     overflow-y: scroll;
-    opacity: 1;
 
     background-color: var(--main-text-color);
     border-radius: 20px;
@@ -72,6 +80,12 @@
         width: 891px;
         height: 911px;
     }
+}
+
+.modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .modal-title {
@@ -461,8 +475,8 @@ display: none;
 .order-banana-img{
     position: absolute;
     content: '';
-    right: 0;
-    bottom: 0;
+    left: 420px;
+    top: 520px;
 }
 
 /* animation  of button*/

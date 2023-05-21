@@ -1,9 +1,9 @@
-<div class="backdrop is-hidden">
-  <div class="modal">
+<div class="is-hidden overlay js-overlay-modal">
+  <div class="modal" data-modal="1">
     <div class="modal-title-btn">
       <h2 class="modal-title">Your Order</h2>
-      <button class="modal-btn-close" type="button" data-modal-close>
-        <svg class="modal-icon" width="24" height="24">
+      <button class="modal-btn-close" type="button">
+        <svg class="modal-icon modal__cross js-modal-close" width="24" height="24">
           <use href="../img/icons.svg#icon-close"></use>
         </svg>
       </button>
@@ -80,7 +80,7 @@
         </li>
       </ul>
    
-
+   <div class="order-modal-wrap">
     <form class="main-form">
       <div class="order-form-field">
         <input
@@ -143,27 +143,40 @@
       <!-- Desktop screen -->
       <source
         media="(min-width: 1280px)"
-        srcset="
-          ./img/order-modal/banana-women-comp.jpg    1x,
-          ./img/order-modal/banana-women-comp@2x.jpg 2x
-        "
-        type="image/jpg"
+        srcset=".\img\order-modal\banana-women-comp.webp 1x,
+        .\img\order-modal\banana-women-comp@2x.webp 2x"
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset=".\img\order-modal\banana-women-comp.png 1x,
+        .\img\order-modal\banana-women-comp@2x.png 2x"
+        type="image/png"
       />
       <!-- Tablet screen -->
+        <source
+        media="(min-width: 768px)"
+        srcset="
+          .\img\order-modal\banana-women.webp 1x,
+          .\img\order-modal\banana-women@2x.webp 2x
+        "
+        type="image/webp"
+      />
       <source
         media="(min-width: 768px)"
         srcset="
-          ./img/order-modal/banana-women-tablet.jpg    1x,
-          ./img/order-modal/banana-women-tablet@2x.jpg 2x
+          .\img\order-modal\banana-women.png 1x,
+          .\img\order-modal\banana-women@2x.png 2x
         "
-        type="image/jpg"
+        type="image/png"
       />
       <img
-        src="./img/order-modal/banana-women-tablet.jpg"
+        src=".\img\order-modal\banana-women.png"
         alt="Banking App design"
         height="467"
         loading="lazy"
       />
     </picture>
+    </div>
   </div>
 </div>
