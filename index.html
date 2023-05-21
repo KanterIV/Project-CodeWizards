@@ -16,8 +16,8 @@
       rel="stylesheet"
     /> -->
     
-    <script type="module" crossorigin src="/Project-CodeWizards/assets/index-b932e48b.js"></script>
-    <link rel="stylesheet" href="/Project-CodeWizards/assets/index-65d71bad.css">
+    <script type="module" crossorigin src="/Project-CodeWizards/assets/index-263ac7fa.js"></script>
+    <link rel="stylesheet" href="/Project-CodeWizards/assets/index-0bfe64e1.css">
   </head>
   <body>
     <header class="page-header">
@@ -517,8 +517,8 @@
       </li>
     </ul>
     <!-- button ORDER with arrow -->
-    <button class="fruits-btn" type="button" aria-label="Order">
-      <svg class="fruits-btn-icon" width="14" height="14">
+    <button class="fruits-btn js-open-modal" type="button" data-modal="1">
+      <svg class="fruits-btn-icon" width="10" height="10">
         <use href="/Project-CodeWizards/assets/icons-d53ac109.svg#icon-arrow"></use>
       </svg>
       ORDER
@@ -601,12 +601,12 @@
   </div>
 </section>
 
-      <div class="backdrop is-hidden">
-  <div class="modal">
+      <div class="is-hidden overlay js-overlay-modal">
+  <div class="modal" data-modal="1">
     <div class="modal-title-btn">
       <h2 class="modal-title">Your Order</h2>
-      <button class="modal-btn-close" type="button" data-modal-close>
-        <svg class="modal-icon" width="24" height="24">
+      <button class="modal-btn-close" type="button">
+        <svg class="modal-icon modal__cross js-modal-close" width="24" height="24">
           <use href="../img/icons.svg#icon-close"></use>
         </svg>
       </button>
@@ -680,7 +680,7 @@
         </li>
       </ul>
    
-
+   <div class="order-modal-wrap">
     <form class="main-form">
       <div class="order-form-field">
         <input
@@ -743,22 +743,41 @@
       <!-- Desktop screen -->
       <source
         media="(min-width: 1280px)"
-        srcset="/Project-CodeWizards/assets/banana-women-comp-73d1cc4b.jpg 1x, /Project-CodeWizards/assets/banana-women-comp@2x-12156cca.jpg 2x"
-        type="image/jpg"
+        srcset=".\img\order-modal\banana-women-comp.webp 1x,
+        .\img\order-modal\banana-women-comp@2x.webp 2x"
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset=".\img\order-modal\banana-women-comp.png 1x,
+        .\img\order-modal\banana-women-comp@2x.png 2x"
+        type="image/png"
       />
       <!-- Tablet screen -->
+        <source
+        media="(min-width: 768px)"
+        srcset="
+          .\img\order-modal\banana-women.webp 1x,
+          .\img\order-modal\banana-women@2x.webp 2x
+        "
+        type="image/webp"
+      />
       <source
         media="(min-width: 768px)"
-        srcset="/Project-CodeWizards/assets/banana-women-tablet-bbc98597.jpg 1x, /Project-CodeWizards/assets/banana-women-tablet@2x-acba87b3.jpg 2x"
-        type="image/jpg"
+        srcset="
+          .\img\order-modal\banana-women.png 1x,
+          .\img\order-modal\banana-women@2x.png 2x
+        "
+        type="image/png"
       />
       <img
-        src="/Project-CodeWizards/assets/banana-women-tablet-bbc98597.jpg"
+        src=".\img\order-modal\banana-women.png"
         alt="Banking App design"
         height="467"
         loading="lazy"
       />
     </picture>
+    </div>
   </div>
 </div>
 
