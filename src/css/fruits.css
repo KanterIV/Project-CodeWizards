@@ -42,6 +42,7 @@
     line-height: 1.28;
   }
 }
+/* cards of fruits */
 .fruits-list {
   display: flex;
   flex-wrap: wrap;
@@ -173,7 +174,7 @@
   line-height: 1.28;
   letter-spacing: -0.04em;
 
-  color: #ae1332;
+  color: var(--bg-color);
 }
 @media only screen and (min-width: 768px) {
   .fruits-price-txt {
@@ -181,6 +182,7 @@
     line-height: 1.33;
   }
 }
+/* button order */
 .fruits-btn {
   display: block;
   width: 80px;
@@ -189,16 +191,35 @@
   margin-right: auto;
   margin-top: 44px;
 
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.28;
   text-align: center;
   letter-spacing: -0.04em;
   text-transform: uppercase;
 
-  color: #ffffff;
-  background: #9dc262;
-  border-radius: 100%;
+  color: var(--main-text-color);
+  background: var(--second-green);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   transform: rotate(-14deg);
 }
+.fruits-btn-icon {
+  margin-right: 2px;
+
+  fill: currentColor;
+
+  transform: rotate(14deg);
+}
+.fruits-btn:hover,
+.fruits-btn:focus {
+  background-color: var(--main-text-color);
+  color: var(--second-green);
+}
+.fruits-btn:hover > .fruits-btn-icon,
+.fruits-btn:focus > .fruits-btn-icon {
+  fill: var(--second-green);
+}
+/* animation of button order */
