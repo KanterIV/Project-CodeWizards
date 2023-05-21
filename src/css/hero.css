@@ -113,6 +113,16 @@ body {
     background-color: var(--bg-color);
 }
 
+@media only screen and (min-width: 1280px) {
+    .hero {
+        position: relative;
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
 .hero-container-main {
     position: relative;
     margin-bottom: 44px;
@@ -123,6 +133,12 @@ body {
         display: flex;
         align-items: flex-start;
         justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .hero-container-main {
+        left: calc(50% - 500px/2);
     }
 }
 
@@ -165,6 +181,7 @@ body {
     .hero-title {
         width: 898px;
         height: 198px;
+
         left: calc(50% - 898px/2);
 
         font-size: 64px;
@@ -216,6 +233,11 @@ body {
     right: 0;
 
 }
+
+/* @media only screen and (min-width: 768px) {
+    .hero-img-one {}
+} */
+
 
 .hero-img-two {
     left: -2%;
@@ -274,6 +296,49 @@ body {
     }
 }
 
+
+/**
+  |============================
+  | 
+  |============================
+*/
+
+.hero-container-under-main {}
+
+@media only screen and (min-width: 768px) {
+    .hero-container-under-main {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .hero-container-under-main {}
+}
+
+
+@media only screen and (min-width: 1280px) {
+    .hero-container-under-main {
+        position: absolute;
+    }
+}
+
+.hero-container-one {
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media only screen and (min-width: 1280px) {
+    .hero-container-one {
+        margin-top: 256px;
+        margin-right: 658px;
+    }
+}
+
+
 .hero-container-text {
     margin: auto;
     margin-bottom: 44px;
@@ -291,6 +356,13 @@ body {
 
 }
 
+@media only screen and (min-width: 1280px) {
+    .hero-text {
+        width: 222px;
+        height: 108px;
+    }
+}
+
 .hero-container-fruit {
     display: flex;
     flex-wrap: wrap;
@@ -299,7 +371,6 @@ body {
 
     width: 249px;
     height: 387px;
-
 
     background-color: var(--green-color);
     border-radius: 500px;
@@ -310,6 +381,12 @@ body {
     margin-bottom: 44px;
 }
 
+@media only screen and (min-width: 768px) {
+    .hero-container-fruit {
+        margin-bottom: 0;
+    }
+}
+
 .hero-title-fruit {
     font-size: 12px;
     line-height: 1.17;
@@ -318,7 +395,6 @@ body {
     letter-spacing: -0.04em;
 
     text-transform: capitalize;
-
     text-shadow: var(--hero-text-shadow);
 
     padding-bottom: 60px;
@@ -339,6 +415,28 @@ body {
     text-shadow: var(--hero-text-shadow);
 }
 
+/**
+  |============================
+  | 
+  |============================
+*/
+
+
+.hero-container-two {}
+
+@media only screen and (min-width: 768px) {
+    .hero-container-two {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+
+
+
+
 .hero-second {
     background-color: var(--yellow-color);
 }
@@ -347,9 +445,6 @@ body {
     padding-bottom: 20px;
 }
 
-.hero-container-btn {
-    margin-bottom: 44px;
-}
 
 .hero-list {
     display: flex;
@@ -358,10 +453,15 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 44px;
-
 }
 
-
+@media only screen and (min-width: 768px) {
+    .hero-list {
+        justify-content: flex-end;
+        margin-top: 44px;
+        margin-bottom: 0;
+    }
+}
 
 .hero-item {
     display: flex;
@@ -373,8 +473,18 @@ body {
     height: 38px;
     border: 1px solid var(--main-text-color);
     border-radius: 1000px;
+    padding: 0 32px;
 
 }
+
+
+@media only screen and (min-width: 768px) {
+    .hero-item {
+        width: calc((100% - 8px) / 2);
+        padding: 0;
+    }
+}
+
 
 .hero-title-item {
     font-size: 12px;
@@ -387,3 +497,53 @@ body {
 
     text-shadow: var(--hero-text-shadow);
 }
+
+
+
+
+
+
+
+.hero {}
+
+.container {}
+
+.hero-container-main {}
+
+.hero-title {}
+
+.hero-container-img {}
+
+.hero-img-one {}
+
+.hero-img-two {}
+
+.hero-img-main {}
+
+.hero-btn {}
+
+.hero-container-one {}
+
+.hero-container-text {}
+
+.hero-text {}
+
+.hero-container-fruit {}
+
+.hero-title-fruit {}
+
+.hero-text-fruit {}
+
+.hero-container-two {}
+
+.hero-container-list {}
+
+.hero-list {}
+
+.list {}
+
+.hero-item {}
+
+.hero-title-item {}
+
+.hero-second {}
