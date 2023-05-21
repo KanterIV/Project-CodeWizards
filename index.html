@@ -17,7 +17,7 @@
     /> -->
     
     <script type="module" crossorigin src="/Project-CodeWizards/assets/index-15841c50.js"></script>
-    <link rel="stylesheet" href="/Project-CodeWizards/assets/index-0bfe64e1.css">
+    <link rel="stylesheet" href="/Project-CodeWizards/assets/index-febaa250.css">
   </head>
   <body>
     <header class="page-header">
@@ -607,7 +607,7 @@
       <h2 class="modal-title">Your Order</h2>
       <button class="modal-btn-close" type="button">
         <svg class="modal-icon modal__cross js-modal-close" width="24" height="24">
-          <use href="../img/icons.svg#icon-close"></use>
+          <use href="/Project-CodeWizards/assets/icons-d53ac109.svg#icon-close"></use>
         </svg>
       </button>
     </div>
@@ -618,20 +618,49 @@
           <div class="modal-cards-strawberry">
             <h3 class="modal-undertitle">Strawberry Basket</h3>
             <p class="modal-plant">Plant</p>
-            <img class="modal-basket-img-str"
-            srcset="
-            ./img/order-modal/kisspng-strawberry-basket-food-basket-5abcb2e34c9249 1mob@1x_result.png
-            ./img/order-modal/kisspng-strawberry-basket-food-basket-5abcb2e34c9249 1mob@2x_result.png
-            ./img/order-modal/kisspng-strawberry-basket-food-basket-5abcb2e34c9249 1tab@1x_result.png
-            ./img/order-modal/kisspng-strawberry-basket-food-basket-5abcb2e34c9249 1tab@2x_result.png
-            ./img/order-modal/kisspng-strawberry-basket-food-basket-5abcb2e34c9249 1desk@1x_result.png
             
-            "
-              src="/Project-CodeWizards/assets/kisspng-strawberry-basket-food-basket-5abcb2e34c9249 1desk@2x_result-b591a155.png"
-              alt="basket strawberry"
-              width="88px"
-              height="95px"
+            <picture class="modal-basket-img-str">
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1280px)"
+                srcset="/Project-CodeWizards/assets/kisspng-strawberry-desk@1x_result-9a847bf0.webp 1x, /Project-CodeWizards/assets/kisspng-strawberry-desk@2x_result-aee34be6.webp 2x"
+                type="image/webp"
               />
+              <source
+                media="(min-width: 1280px)"
+                srcset="/Project-CodeWizards/assets/kisspng-strawberry-1desk@1x_result-34b0c156.png 1x, /Project-CodeWizards/assets/kisspng-strawberry-1desk@2x_result-b591a155.png 2x"
+                type="image/png"
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset="/Project-CodeWizards/assets/kisspng-strawberry-tab@1x_result-fe8b5d93.webp 1x, /Project-CodeWizards/assets/kisspng-strawberry-tab@2x_result-4f19c519.webp 2x"
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="/Project-CodeWizards/assets/kisspng-strawberry-1tab@1x_result-f9a82661.png 1x, /Project-CodeWizards/assets/kisspng-strawberry-1tab@2x_result-7e633fab.png 2x"
+                type="image/png"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                srcset="data:image/webp;base64,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 1x, /Project-CodeWizards/assets/kisspng-strawberry-mob@2x_result-795b95c5.webp 2x"
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="/Project-CodeWizards/assets/kisspng-strawberry-1mob@1x_result-1ce75605.png 1x, /Project-CodeWizards/assets/kisspng-strawberry-1mob@2x_result-24d2ad3a.png 2x"
+                type="image/png"
+              />
+              <img
+                
+                src="/Project-CodeWizards/assets/kisspng-strawberry-1mob@1x_result-1ce75605.png"
+                alt="strawberry"
+                height="95"
+                loading="lazy"
+              />
+            </picture>
              <label class="form-label-accept">
             <input class="accept-box" type="checkbox" />
           </label>
@@ -641,19 +670,49 @@
           <div class="modal-cards-apple">
             <h3 class="modal-undertitle">Apple Basket</h3>
             <p class="modal-plant">Plant</p>
-            <img class="modal-basket-img-apple"
-            srcset="
-            ./img/order-modal/IMG_9757 1desk@1x_result.png
-            ./img/order-modal/IMG_9757 1mob@1x_result.png
-            ./img/order-modal/IMG_9757 1mob@2x_result.png
-            ./img/order-modal/IMG_9757 1tab@1x_result.png
-            ./img/order-modal/IMG_9757 1tab@2x_result.png
-            "
-            src="/Project-CodeWizards/assets/IMG_9757 1desk@2x_result-42093606.png" 
-            alt="basket apple"
-            width="88px"
-            height="95px"
-            />
+            
+            <picture class="modal-basket-img-apple">
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1280px)"
+                srcset="/Project-CodeWizards/assets/IMG_desk@1x_result-352327cf.webp 1x, /Project-CodeWizards/assets/IMG_desk@2x_result-ea7a4c45.webp 2x"
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1280px)"
+                srcset="/Project-CodeWizards/assets/IMG_97571desk@1x_result-e8e0817e.png 1x, /Project-CodeWizards/assets/IMG_97571desk@2x_result-42093606.png 2x"
+                type="image/png"
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset="/Project-CodeWizards/assets/IMG_tab@1x_result-c6cf70a1.webp 1x, /Project-CodeWizards/assets/IMG_tab@2x_result-8e2ad0dd.webp 2x"
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="/Project-CodeWizards/assets/IMG_97571tab@1x_result-61253a50.png 1x, /Project-CodeWizards/assets/IMG_97571tab@2x_result-772dbfb1.png 2x"
+                type="image/png"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                srcset="data:image/webp;base64,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 1x, /Project-CodeWizards/assets/IMG_mob@2x_result-201c11f2.webp 2x"
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="/Project-CodeWizards/assets/IMG_97571mob@1x_result-d3709d5f.png 1x, /Project-CodeWizards/assets/IMG_97571mob@2x_result-f84f2dae.png 2x"
+                type="image/png"
+              />
+              <img
+                
+                src="/Project-CodeWizards/assets/IMG_97571mob@1x_result-d3709d5f.png"
+                alt="apple"
+                height="95"
+                loading="lazy"
+              />
+            </picture>
             <label class="form-label-accept">
               <input class="accept-box" type="checkbox" />
             </label>
@@ -663,16 +722,48 @@
           <div class="modal-cards-fruits">
             <h3 class="modal-undertitle">Fruits Basket</h3>
             <p class="modal-plant">Plant</p>
-            <img class="modal-basket-img-fruits"
-            srcset="/Project-CodeWizards/assets/unsplash_zeFy-oCUhV8desk@1x_result-909b5466.png ./img/order-modal/unsplash_zeFy-oCUhV8mob@1x_result.png
- ./img/order-modal/unsplash_zeFy-oCUhV8mob@2x_result.png
- ./img/order-modal/unsplash_zeFy-oCUhV8tab@1x_result.png
- ./img/order-modal/unsplash_zeFy-oCUhV8tab@2x_result.png"
-            src="/Project-CodeWizards/assets/unsplash_zeFy-oCUhV8desk@2x_result-19b88556.png" 
-            alt="basket fruits"
-            width="88px"
-            height="95px"
-            />
+            <picture class="modal-basket-img-fruits">
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1280px)"
+                srcset="/Project-CodeWizards/assets/unsplash_desk@1x_result-b03252aa.webp 1x, /Project-CodeWizards/assets/unsplash_desk@2x_result-51077c5b.webp 2x"
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1280px)"
+                srcset="/Project-CodeWizards/assets/unsplash_desk@1x_result-909b5466.png 1x, /Project-CodeWizards/assets/unsplash_desk@2x_result-19b88556.png 2x"
+                type="image/png"
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset="/Project-CodeWizards/assets/unsplash_tab@1x_result-0bd3945d.webp 1x, /Project-CodeWizards/assets/unsplash_tab@2x_result-2c04a12e.webp 2x"
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="/Project-CodeWizards/assets/unsplash_tab@1x_result-b4b93c83.png 1x, /Project-CodeWizards/assets/unsplash_tab@2x_result-ea961c3c.png 2x"
+                type="image/png"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                srcset="data:image/webp;base64,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 1x, /Project-CodeWizards/assets/unsplash_mob@2x_result-734864cd.webp 2x"
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="/Project-CodeWizards/assets/unsplash_mob@1x_result-bdc7943c.png 1x, /Project-CodeWizards/assets/unsplash_mob@2x_result-5ef3a0a1.png 2x"
+                type="image/png"
+              />
+              <img
+                
+                src="/Project-CodeWizards/assets/unsplash_mob@1x_result-bdc7943c.png"
+                alt="fruits"
+                height="95"
+                loading="lazy"
+              />
+            </picture>
             <label class="form-label-accept">
               <input class="accept-box" type="checkbox" />
             </label>
