@@ -4,7 +4,7 @@
       <h2 class="modal-title">Your Order</h2>
       <button class="modal-btn-close" type="button" data-modal-close>
         <svg class="modal-icon" width="24" height="24">
-          <use href="../img/icons.svg#icon-close"></use>
+          <use href="./img/icons.svg#icon-close"></use>
         </svg>
       </button>
     </div>
@@ -15,20 +15,62 @@
           <div class="modal-cards-strawberry">
             <h3 class="modal-undertitle">Strawberry Basket</h3>
             <p class="modal-plant">Plant</p>
-            <img class="modal-basket-img-str"
-            srcset="
-            ./img/order-modal/kisspng-strawberry-basket-food-basket-5abcb2e34c9249 1mob@1x_result.png
-            ./img/order-modal/kisspng-strawberry-basket-food-basket-5abcb2e34c9249 1mob@2x_result.png
-            ./img/order-modal/kisspng-strawberry-basket-food-basket-5abcb2e34c9249 1tab@1x_result.png
-            ./img/order-modal/kisspng-strawberry-basket-food-basket-5abcb2e34c9249 1tab@2x_result.png
-            ./img/order-modal/kisspng-strawberry-basket-food-basket-5abcb2e34c9249 1desk@1x_result.png
             
-            "
-              src="./img/order-modal/kisspng-strawberry-basket-food-basket-5abcb2e34c9249 1desk@2x_result.png"
-              alt="basket strawberry"
-              width="88px"
-              height="95px"
+            <picture class="modal-basket-img-str">
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1280px)"
+                srcset="./img/order-modal/webp/kisspng-strawberry-desk@1x_result.webp 1x,
+                ./img/order-modal/webp/kisspng-strawberry-desk@2x_result.webp 2x
+                
+                "
+                type="image/webp"
               />
+              <source
+                media="(min-width: 1280px)"
+                srcset="./img/order-modal/kisspng-strawberry-1desk@1x_result.png 1x,
+                ./img/order-modal/kisspng-strawberry-1desk@2x_result.png 2x
+                "
+                type="image/png"
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/order-modal/webp/kisspng-strawberry-tab@1x_result.webp 1x,
+                ./img/order-modal/webp/kisspng-strawberry-tab@2x_result.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/order-modal/kisspng-strawberry-1tab@1x_result.png 1x,
+                ./img/order-modal/kisspng-strawberry-1tab@2x_result.png 2x
+                "
+                type="image/png"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                srcset="./img/order-modal/webp/kisspng-strawberry-mob@1x_result.webp 1x,
+                ./img/order-modal/webp/kisspng-strawberry-mob@2x_result.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="./img/order-modal/kisspng-strawberry-1mob@1x_result.png 1x,
+                ./img/order-modal/kisspng-strawberry-1mob@2x_result.png 2x
+                "
+                type="image/png"
+              />
+              <img
+                
+                src="./img/order-modal/kisspng-strawberry-1mob@1x_result.png"
+                alt="strawberry"
+                height="95"
+                loading="lazy"
+              />
+            </picture>
              <label class="form-label-accept">
             <input class="accept-box" type="checkbox" />
           </label>
@@ -38,19 +80,61 @@
           <div class="modal-cards-apple">
             <h3 class="modal-undertitle">Apple Basket</h3>
             <p class="modal-plant">Plant</p>
-            <img class="modal-basket-img-apple"
-            srcset="
-            ./img/order-modal/IMG_9757 1desk@1x_result.png
-            ./img/order-modal/IMG_9757 1mob@1x_result.png
-            ./img/order-modal/IMG_9757 1mob@2x_result.png
-            ./img/order-modal/IMG_9757 1tab@1x_result.png
-            ./img/order-modal/IMG_9757 1tab@2x_result.png
-            "
-            src="./img/order-modal/IMG_9757 1desk@2x_result.png" 
-            alt="basket apple"
-            width="88px"
-            height="95px"
-            />
+            
+            <picture class="modal-basket-img-apple">
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1280px)"
+                srcset="./img/order-modal/webp/IMG_desk@1x_result.webp 1x,
+                ./img/order-modal/webp/IMG_desk@2x_result.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1280px)"
+                srcset="./img/order-modal/IMG_97571desk@1x_result.png 1x,
+                ./img/order-modal/IMG_97571desk@2x_result.png 2x
+                "
+                type="image/png"
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/order-modal/webp/IMG_tab@1x_result.webp 1x,
+                ./img/order-modal/webp/IMG_tab@2x_result.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/order-modal/IMG_97571tab@1x_result.png 1x,
+                ./img/order-modal/IMG_97571tab@2x_result.png 2x
+                "
+                type="image/png"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                srcset="./img/order-modal/webp/IMG_mob@1x_result.webp 1x,
+                ./img/order-modal/webp/IMG_mob@2x_result.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="./img/order-modal/IMG_97571mob@1x_result.png 1x,
+                ./img/order-modal/IMG_97571mob@2x_result.png 2x
+                "
+                type="image/png"
+              />
+              <img
+                
+                src="./img/order-modal/IMG_97571mob@1x_result.png"
+                alt="apple"
+                height="95"
+                loading="lazy"
+              />
+            </picture>
             <label class="form-label-accept">
               <input class="accept-box" type="checkbox" />
             </label>
@@ -60,19 +144,60 @@
           <div class="modal-cards-fruits">
             <h3 class="modal-undertitle">Fruits Basket</h3>
             <p class="modal-plant">Plant</p>
-            <img class="modal-basket-img-fruits"
-            srcset="
-            ./img/order-modal/unsplash_zeFy-oCUhV8desk@1x_result.png
-            ./img/order-modal/unsplash_zeFy-oCUhV8mob@1x_result.png
-            ./img/order-modal/unsplash_zeFy-oCUhV8mob@2x_result.png
-            ./img/order-modal/unsplash_zeFy-oCUhV8tab@1x_result.png
-            ./img/order-modal/unsplash_zeFy-oCUhV8tab@2x_result.png
-            "
-            src="./img/order-modal/unsplash_zeFy-oCUhV8desk@2x_result.png" 
-            alt="basket fruits"
-            width="88px"
-            height="95px"
-            />
+            <picture class="modal-basket-img-fruits">
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1280px)"
+                srcset="./img/order-modal/webp/unsplash_desk@1x_result.webp 1x,
+                ./img/order-modal/webp/unsplash_desk@2x_result.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1280px)"
+                srcset="./img/order-modal/unsplash_desk@1x_result.png 1x,
+                ./img/order-modal/unsplash_desk@2x_result.png 2x
+                "
+                type="image/png"
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/order-modal/webp/unsplash_tab@1x_result.webp 1x,
+                ./img/order-modal/webp/unsplash_tab@2x_result.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/order-modal/unsplash_tab@1x_result.png 1x,
+                ./img/order-modal/unsplash_tab@2x_result.png 2x
+                "
+                type="image/png"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                srcset="./img/order-modal/webp/unsplash_mob@1x_result.webp 1x,
+                ./img/order-modal/webp/unsplash_mob@2x_result.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="./img/order-modal/unsplash_mob@1x_result.png 1x,
+                ./img/order-modal/unsplash_mob@2x_result.png 2x
+                "
+                type="image/png"
+              />
+              <img
+                
+                src="./img/order-modal/unsplash_mob@1x_result.png"
+                alt="fruits"
+                height="95"
+                loading="lazy"
+              />
+            </picture>
             <label class="form-label-accept">
               <input class="accept-box" type="checkbox" />
             </label>
