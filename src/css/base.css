@@ -12,6 +12,10 @@
   --main-text-font: 'DM Sans', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   background-color: #ae1332;
 }
