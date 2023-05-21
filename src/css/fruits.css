@@ -37,7 +37,7 @@
 }
 @media only screen and (min-width: 768px) {
   .fruits-section-txt {
-    width: 547px;
+    min-width: 547px;
     font-size: 14px;
     line-height: 1.28;
   }
@@ -66,8 +66,6 @@
   padding: 64px 20px 24px 24px;
 
   border-radius: 20px;
-
-  flex-basis: calc((100% - 0) / 1);
 }
 .fruits-item:nth-child(1) {
   background: #f8766b;
@@ -98,7 +96,7 @@
 }
 @media only screen and (min-width: 768px) {
   .fruits-item {
-    flex-basis: calc((100% - 32px) / 2);
+    flex-basis: calc((100% - 16px) / 2);
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -206,8 +204,16 @@
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   transform: rotate(-14deg);
 }
+@media only screen and (min-width: 768px) {
+  .fruits-btn {
+    width: 114px;
+    height: 114px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
 .fruits-btn-icon {
-  margin-right: 2px;
+  margin-right: 4px;
 
   fill: currentColor;
 
