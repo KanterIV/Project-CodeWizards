@@ -1,3 +1,19 @@
+.contacts-section {
+  padding-top: 53px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contacts-section {
+    padding-top: 79px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .contacts-section {
+    padding-top: 89px;
+  }
+}
+
 .contacts-container {
   position: relative;
   display: flex;
