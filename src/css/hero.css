@@ -113,8 +113,6 @@ body {
     background-color: var(--bg-color);
 }
 
-.container {}
-
 .hero-container-main {
     position: relative;
     margin-bottom: 44px;
@@ -168,19 +166,11 @@ body {
         width: 898px;
         height: 198px;
         left: calc(50% - 898px/2);
-        /* display: flex;
-        margin: auto; */
-        /* left: 191px; */
-        /* top: 114px; */
-
 
         font-size: 64px;
         line-height: 1;
     }
 }
-
-
-
 
 .hero-container-img {
     position: relative;
@@ -218,14 +208,8 @@ body {
         padding: 20px 17px;
         width: 486px;
         height: 742px;
-
-
-
-
     }
 }
-
-
 
 .hero-img-one {
     top: -8%;
