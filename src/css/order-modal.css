@@ -27,9 +27,9 @@
 }
 
 
-@madia screen and (orientation:lanscape) {
-    .overlay {
-        owerflow: auto;
+@media screen and (orientation:lanscape) {
+    .backdrop {
+        overflow: auto;
     }
 }
 
@@ -129,11 +129,7 @@ line-height: 1.1;
     fill:var(--bg-color);
 }
 
-.modal-list-container {
-    
-    
-    
-}
+
 .modal-list {
     max-width: 295px;
     display: flex;
@@ -151,7 +147,7 @@ line-height: 1.1;
   }
 }
 
-@media only screen and (min-width: 1128px) {
+@media only screen and (min-width: 1280px) {
     .modal-list {
       max-width: 811px;
       gap: 20px;
@@ -177,7 +173,7 @@ line-height: 1.1;
   }
 }
 
-@media only screen and (min-width: 1128px) { 
+@media only screen and (min-width: 1280px) { 
     .modal-cards-strawberry {
         width: 257px;
         height: 308px;
@@ -200,9 +196,9 @@ line-height: 1.1;
   }
 }
 
-@media only screen and (min-width: 1128px) {
+@media only screen and (min-width: 1280px) {
     .modal-basket-img-str {
-      
+      left: 15%;
       width: 173px;
       height: 196px;
     }
@@ -235,7 +231,7 @@ line-height: 1.1;
     background-size: 8px;
   }
 
-  @media only screen and (min-width: 1128px) {
+  @media only screen and (min-width: 1280px) {
     .accept-box:checked {
         background-size: 10px;
     }
@@ -259,7 +255,7 @@ line-height: 1.1;
   }
 }
 
-@media only screen and (min-width: 1128px) {
+@media only screen and (min-width: 1280px) {
     .modal-cards-apple {
         width: 257px;
         height: 308px;
@@ -269,7 +265,7 @@ line-height: 1.1;
 .modal-basket-img-apple {
     position: absolute;
     top: 15%;
-    left: 65%; 
+    left: 60%; 
 }
 
 @media only screen and (min-width: 768px) {
@@ -281,7 +277,7 @@ line-height: 1.1;
   }
 }
 
-@media only screen and (min-width: 1128px) {
+@media only screen and (min-width: 1280px) {
     .modal-basket-img-apple {
       width: 229px;
       height: 196px;
@@ -306,7 +302,7 @@ line-height: 1.1;
   }
 }
 
-@media only screen and (min-width: 1128px) {
+@media only screen and (min-width: 1280px) {
     .modal-cards-fruits {
         width: 257px;
         height: 308px;
@@ -316,7 +312,7 @@ line-height: 1.1;
 .modal-basket-img-fruits {
     position: absolute;
     top: 15%;
-    left: 65%; 
+    left: 60%; 
 }
 
 @media only screen and (min-width: 768px) {
@@ -328,7 +324,7 @@ line-height: 1.1;
   }
 }
 
-@media only screen and (min-width: 1128px) {
+@media only screen and (min-width: 1280px) {
     .modal-basket-img-fruits {
       width: 229px;
       height: 196px;
@@ -351,7 +347,7 @@ color: var(--main-text-color);
 
 }
 
-@media only screen and (min-width: 1128px) {
+@media only screen and (min-width: 1280px) {
   .modal-undertitle {
     font-weight: 700;
 font-size: 24px;
@@ -360,14 +356,9 @@ margin-bottom: 8px;
   }
 }
 .modal-plant {
-
-/* padding-top: 22px;
-padding-left: 20px; */
 font-weight: 400;
 font-size: 14px;
 line-height: 1.29;
-
-
 letter-spacing: -0.02em;
 
 color: var(--main-text-color);
