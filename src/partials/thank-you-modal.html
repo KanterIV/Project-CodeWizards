@@ -1,0 +1,36 @@
+<div class="modal-thank-you" data-modal>
+  <button
+    id="al"
+    aria-label="close"
+    class="modal-thank-close js-modal-close"
+    data-modal-close
+  >
+    <svg class="modal-thank-close-btn js-modal-close" width="28" height="28">
+      <use href="./img/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <picture>
+    <source
+      srcset="
+        ./img/thank-you-modal/tablet-raspberry@1x.webp 1x,
+        ./img/thank-you-modal/tablet-raspberry@2x.webp 2x
+      "
+      type="image/webp"
+    />
+    <img
+      class="modal-thank-img"
+      src="./img/thank-you-modal/tablet-raspberry@1x.webp"
+      alt="raspberry"
+      loading="lazy"
+    />
+  </picture>
+  <h2 class="modal-thank-header">THANK YOU</h2>
+  <p class="modal-thank-desc">
+    Thank you for your order! Our team is preparing your box with fresh,
+    delicious fruits and vegetables, and we'll deliver it straight to your
+    doorstep. We appreciate your business and look forward to providing you with
+    the best possible experience!
+  </p>
+</div>
+<div class="overlay js-overlay-modal"></div>
+<script src="./js/modal.js"></script>
