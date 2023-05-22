@@ -63,7 +63,6 @@
 .contacts-list {
   display: flex;
   gap: 16px;
-  margin-bottom: 80px;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -102,7 +101,6 @@
 }
 
 @media only screen and (max-width: 767px) {
-
   .contacts-support-text,
   .contacts-form {
     display: none;
@@ -154,7 +152,6 @@
   height: 48px;
 
   border: none;
-  background: #9dc162;
   border-radius: 100px;
 
   font-weight: 400;
@@ -163,4 +160,18 @@
   letter-spacing: -0.04em;
   text-transform: capitalize;
   color: #ffffff;
+
+  background-color: var(--green-color);
+  background: linear-gradient(
+    0deg,
+    rgba(157, 193, 98, 1) 0%,
+    rgba(157, 193, 98, 1) 100%
+  );
+}
+
+.contacts-form-btn:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
