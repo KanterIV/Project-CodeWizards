@@ -63,12 +63,18 @@
 .contacts-list {
   display: flex;
   gap: 16px;
-  margin-bottom: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contacts-list {
+    margin-bottom: 80px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
   .contacts-list {
     gap: 24px;
+    margin-bottom: 80px;
   }
 }
 
@@ -102,7 +108,6 @@
 }
 
 @media only screen and (max-width: 767px) {
-
   .contacts-support-text,
   .contacts-form {
     display: none;
