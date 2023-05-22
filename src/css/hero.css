@@ -3,8 +3,8 @@
 
 
 
-    outline: 2px solid rgb(255, 0, 0);
-    outline-offset: -2px;
+    /* outline: 2px solid rgb(255, 0, 0);
+    outline-offset: -2px; */
 }
 
 @media only screen and (min-width: 768px) {
@@ -47,13 +47,6 @@
     position: absolute;
     z-index: 2;
 }
-
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-    .hero-container-main img {
-        top: 75px;
-    }
-}
-
 
 .hero-title {
 
@@ -195,6 +188,15 @@
 .hero-img-main {
     margin: auto;
     border-radius: 500px;
+}
+
+@media only screen and (max-width: 374px) {
+    .hero-img-main {
+        top: 92px;
+        left: 12px;
+        max-width: 256px;
+
+    }
 }
 
 
