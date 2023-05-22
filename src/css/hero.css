@@ -1,12 +1,18 @@
 .hero {
     padding-top: 106px;
-    padding-bottom: 80px;
-    background-color: var(--bg-color);
+    /* padding-bottom: 80px; */
+    /* background-color: var(--bg-color); */
 
 
 
     /* outline: 2px solid rgb(255, 0, 0);
     outline-offset: -2px; */
+}
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        padding-top: 122px;
+    }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -38,11 +44,22 @@
 }
 
 .hero-container-main img {
+
     position: absolute;
     z-index: 2;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+    .hero-container-main img {
+        top: 75px;
+    }
+}
+
+
 .hero-title {
+    /* delete after fix */
+    display: none;
+    /* END delete after fix */
     position: absolute;
     z-index: 3;
     width: 335px;
@@ -85,11 +102,17 @@
 }
 
 .hero-container-img {
+    /* display: none; */
     position: relative;
 
-    padding: 12px;
+    width: 100%;
+    /* 
     width: 335px;
+     */
     height: 509px;
+
+
+
 
 
     /**
@@ -113,6 +136,14 @@
   | End Gradient
   |============================
 */
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+    .hero-container-img {
+        padding: 12px;
+        width: 335px;
+        height: 509px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
