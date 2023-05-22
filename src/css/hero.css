@@ -1,17 +1,16 @@
 .hero {
     padding-top: 106px;
-    /* padding-bottom: 80px; */
-    /* background-color: var(--bg-color); */
 
 
 
-    /* outline: 2px solid rgb(255, 0, 0);
-    outline-offset: -2px; */
+    outline: 2px solid rgb(255, 0, 0);
+    outline-offset: -2px;
 }
 
 @media only screen and (min-width: 768px) {
     .hero {
         padding-top: 122px;
+        padding-bottom: 137px;
     }
 }
 
@@ -157,23 +156,50 @@
 .hero-img-one {
     top: -8%;
     right: 0;
-
+    filter: blur(2px);
 }
 
-/* @media only screen and (min-width: 768px) {
-    .hero-img-one {}
-} */
+@media only screen and (min-width: 768px) {
+    .hero-img-one {
+        top: -90px;
+        right: -81px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .hero-img-one {
+        top: -85px;
+        right: -153px;
+    }
+}
 
 
 .hero-img-two {
     left: -2%;
+    filter: blur(2px);
+}
 
+@media only screen and (min-width: 768px) {
+    .hero-img-two {
+        top: 43px;
+        left: -86px;
+
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .hero-img-two {
+        top: 41px;
+        left: -145px;
+    }
 }
 
 .hero-img-main {
     margin: auto;
     border-radius: 500px;
 }
+
+
 
 
 
