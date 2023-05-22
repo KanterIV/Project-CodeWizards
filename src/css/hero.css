@@ -56,9 +56,7 @@
 
 
 .hero-title {
-    /* delete after fix */
-    display: none;
-    /* END delete after fix */
+
     position: absolute;
     z-index: 3;
     width: 335px;
@@ -75,6 +73,13 @@
     text-transform: uppercase;
 
     text-shadow: var(--hero-text-shadow);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+    .hero-title {
+        font-weight: 400;
+        font-size: 26px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -101,17 +106,10 @@
 }
 
 .hero-container-img {
-    /* display: none; */
     position: relative;
 
     width: 100%;
-    /* 
-    width: 335px;
-     */
     height: 509px;
-
-
-
 
 
     /**
@@ -189,8 +187,8 @@
 
 @media only screen and (min-width: 1280px) {
     .hero-img-two {
-        top: 41px;
-        left: -145px;
+        top: 53px;
+        left: -183px;
     }
 }
 
@@ -198,9 +196,6 @@
     margin: auto;
     border-radius: 500px;
 }
-
-
-
 
 
 .hero-btn {
@@ -339,6 +334,8 @@
     }
 }
 
+
+
 .hero-title-fruit {
     font-size: 12px;
     line-height: 1.17;
@@ -387,9 +384,17 @@
     background-color: var(--yellow-color);
 }
 
+@media only screen and (max-width: 768px) {
+    .hero-second {
+        margin-bottom: 0;
+    }
+}
+
 .hero-second .hero-title-fruit {
     padding-bottom: 20px;
 }
+
+
 
 
 .hero-list {
