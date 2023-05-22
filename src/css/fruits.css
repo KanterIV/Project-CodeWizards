@@ -1,5 +1,4 @@
 .fruits-section-title {
-
   max-width: 210px;
   text-align: center;
   margin-left: auto;
@@ -15,8 +14,6 @@
 
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
-
-
 
 @media only screen and (min-width: 768px) {
   .fruits-section-title {
@@ -236,6 +233,8 @@
 
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   transform: rotate(-14deg);
+
+  animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
 @media only screen and (min-width: 768px) {
@@ -261,8 +260,8 @@
   color: var(--second-green);
 }
 
-.fruits-btn:hover>.fruits-btn-icon,
-.fruits-btn:focus>.fruits-btn-icon {
+.fruits-btn:hover > .fruits-btn-icon,
+.fruits-btn:focus > .fruits-btn-icon {
   fill: var(--second-green);
 }
 

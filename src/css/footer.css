@@ -157,25 +157,3 @@
   color: inherit;
 }
 
-/**
-  |============================
-  | Animation
-  |============================
-*/
-@keyframes shake-icon {
-  10% {
-    transform: rotate(20deg);
-  }
-
-  20% {
-    transform: rotate(-20deg);
-  }
-
-  30% {
-    transform: rotate(20deg);
-  }
-
-  40% {
-    transform: rotate(-20deg);
-  }
-}
