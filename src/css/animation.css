@@ -1,0 +1,46 @@
+/**
+  |============================
+  | Animation
+  |============================
+*/
+@keyframes shake-icon {
+  10% {
+    transform: rotate(20deg);
+  }
+
+  20% {
+    transform: rotate(-20deg);
+  }
+
+  30% {
+    transform: rotate(20deg);
+  }
+
+  40% {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1) rotate(-14deg);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91) rotate(-14deg);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98) rotate(-14deg);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87) rotate(-14deg);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1) rotate(-14deg);
+    animation-timing-function: ease-out;
+  }
+}
