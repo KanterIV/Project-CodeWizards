@@ -159,8 +159,12 @@
   height: 48px;
 
   border: none;
-  background: #9dc162;
   border-radius: 100px;
+  background: linear-gradient(
+    0deg,
+    rgba(157, 193, 98, 1) 0%,
+    rgba(157, 193, 98, 1) 100%
+  );
 
   font-weight: 400;
   font-size: 14px;
@@ -168,4 +172,11 @@
   letter-spacing: -0.04em;
   text-transform: capitalize;
   color: #ffffff;
+}
+
+.contacts-form-btn:hover {
+  box-shadow: 2px 2px 3px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
