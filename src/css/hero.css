@@ -15,7 +15,7 @@
 
 @media only screen and (min-width: 1280px) {
     .hero {
-        /* position: relative; */
+
         display: flex;
         flex-wrap: wrap;
     }
@@ -55,7 +55,7 @@
     position: absolute;
     z-index: 3;
     max-width: 335px;
-    /* height: 118px; */
+
     top: -8%;
 
 
@@ -107,28 +107,6 @@
 
     width: 100%;
     height: 509px;
-
-    /**
-      |============================
-      | Later FIX Border Gradient
-      |============================
-    */
-
-    border: 1px solid;
-    border-top-style: hidden;
-    border-right-style: hidden;
-    border-bottom-style: solid;
-    border-left-style: hidden;
-    border-radius: 500px;
-
-    /* border-image: linear-gradient(rgba(255, 255, 255, 0),
-            rgba(255, 255, 255, 0.44),
-            rgba(255, 255, 255, 1)) 44.18; */
-    /**
-  |============================
-  | End Gradient
-  |============================
-*/
 }
 
 @media only screen and (max-width: 374px) {
@@ -265,12 +243,6 @@
     }
 }
 
-/**
-  |============================
-  | 
-  |============================
-*/
-
 .hero-container-under-main {}
 
 @media only screen and (min-width: 768px) {
@@ -376,11 +348,6 @@
     text-shadow: var(--hero-text-shadow);
 }
 
-/**
-  |============================
-  | 
-  |============================
-*/
 
 .hero-container-two {}
 
@@ -439,7 +406,7 @@
 
 @media only screen and (min-width: 768px) {
     .hero-item {
-        /* width: calc((100% - 8px) / 2); */
+
         min-width: 110px;
     }
 }
