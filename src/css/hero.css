@@ -104,8 +104,14 @@
 
 .hero-container-img {
     position: relative;
-
+    border: 1px solid;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-bottom-style: solid;
+    border-left-style: hidden;
+    border-radius: 500px;
     width: 100%;
+
     height: 509px;
 }
 
