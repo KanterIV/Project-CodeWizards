@@ -118,8 +118,8 @@
   background-color: rgba(174, 19, 50, 0.1);
 }
 
-.footer-networks-link:hover>.footer-networks-icon,
-.footer-networks-link:focus>.footer-networks-icon {
+.footer-networks-link:hover > .footer-networks-icon,
+.footer-networks-link:focus > .footer-networks-icon {
   animation: shake-icon 400ms;
 }
 
@@ -157,3 +157,59 @@
   color: inherit;
 }
 
+/**
+  |============================
+  | Hover link
+  |============================
+*/
+.hover-link {
+  background-image: linear-gradient(
+    to right,
+    #fff,
+    #fff 50%,
+    var(--bg-color) 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 5px;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0.3s ease-in-out,
+    background-image 250ms ease-in-out;
+}
+.hover-link:hover,
+.hover-link:focus {
+  background-position: 0;
+}
+.hover-link:before {
+  content: '';
+  background: var(--bg-color);
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  border-radius: 3px;
+  transition: width 250ms ease-in-out;
+}
+.hover-link:hover::before,
+.hover-link:focus::before {
+  width: 100%;
+}
+.hover-item {
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+.hover-item:hover {
+  background-color: var(--bg-color);
+}
+.hover-link:focus {
+  background-image: linear-gradient(
+    to right,
+    var(--bg-color) 50%,
+    var(--bg-color)
+  );
+}
